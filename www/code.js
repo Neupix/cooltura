@@ -11,4 +11,6 @@ $('*[data-progress]').each(function(){
 
 $('*[data-section="evento"]').on('click', function() {
 	$('#eventoPoster').attr('src', $(this).find('img').attr('src') );
+
+	$('#evento .title').html( $(this).data('title') );
 });
