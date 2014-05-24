@@ -27,51 +27,39 @@
 		</nav>
 	</header>
 
-	<article id="home_menu" data-title="Inicio">
+	<article id="home_menu" data-title="Cooltura">
 		<aside class="columns">
-			<aside data-section="evento" class="p100 d6 p" data-title="Hamlet">
-				<img src="img/ui/ev0.jpg" alt="" class="sh">
+			<aside data-section="evento" class="d6 p" data-title="Hamlet" data-precio="50">
+				<img src="img/ui/ev0.jpg" alt="" class="sh p100">
 				<div class="progress" data-progress="50"></div>
 			</aside>
 	
-			<aside data-section="evento" class="p100 d6 p" data-title="ART">
-				<img src="img/ui/ev1.jpg" alt="" class="sh">
+			<aside data-section="evento" class="d6 p" data-title="ART" data-precio="25">
+				<img src="img/ui/ev1.jpg" alt="" class="sh p100">
 				<div class="progress" data-progress="25"></div>
 			</aside>
 
-			<aside data-section="evento" class="p100 d6 p" data-title="EANHL">
-				<img src="img/ui/ev2.jpg" alt="" class="sh">
-				<div class="progress" data-progress="95"></div>
+			<aside data-section="evento" class="d6 p" data-title="EANHL" data-precio="75">
+				<img src="img/ui/ev2.jpg" alt="" class="sh p100">
+				<div class="progress" data-progress="100"></div>
 			</aside>
 	
-			<aside data-section="evento" class="p100 d6 p" data-title="Collage">
-				<img src="img/ui/ev3.jpg" alt="" class="sh">
+			<aside data-section="evento" class="d6 p" data-title="Collage" data-precio="33">
+				<img src="img/ui/ev3.jpg" alt="" class="sh p100">
 				<div class="progress" data-progress="5"></div>
 			</aside>
 
-			<aside data-section="evento" class="p100 d6 p" data-title="Potion">
-				<img src="img/ui/ev4.jpg" alt="" class="sh">
+			<aside data-section="evento" class="d6 p" data-title="Potion" data-precio="88">
+				<img src="img/ui/ev4.jpg" alt="" class="sh p100">
 				<div class="progress" data-progress="33"></div>
 			</aside>
 	
-			<aside data-section="evento" class="p100 d6 p" data-title="Seussical">
-				<img src="img/ui/ev5.jpg" alt="" class="sh">
+			<aside data-section="evento" class="d6 p" data-title="Seussical" data-precio="13">
+				<img src="img/ui/ev5.jpg" alt="" class="sh p100">
 				<div class="progress" data-progress="66"></div>
 			</aside>
 		</aside>
 	</article><!-- home_menu -->
-
-	<article id="home_eventos" data-title="Eventos">
-		<aside>
-			No hay eventos disponibles.
-		</aside>
-	</article><!-- home_eventos -->
-
-	<article id="home_noticias" data-title="Noticias">
-		<aside>
-			No se han podido cargar las noticias.
-		</aside>
-	</article><!-- home_noticias -->
 </section><!-- home -->
 
 <section id="evento">
@@ -83,13 +71,18 @@
 		</nav>
 	</header>
 
-	<article id="evento_home">
+	<article id="evento_home" data-title="Evento">
 		<aside>
 			<img src="#" id="eventoPoster" alt="" class="p100 sh pp nt">
 		</aside>
 
+		<aside>
+			<h1>Sinopsis</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, aperiam commodi obcaecati distinctio ut repudiandae dignissimos excepturi explicabo mollitia molestias eos ab architecto eius itaque rem animi doloremque atque rerum consequatur eaque ipsum tempora nihil harum sequi quisquam earum officiis maiores! Tempore, eligendi, provident iusto temporibus nisi modi dolor mollitia.
+		</aside>
+
 		<a href="#" data-section="buy" class="button">
-			Comprar
+			Comprar, <b class="price">$50</b>
 		</a>
 	</article>
 </section>
@@ -103,7 +96,7 @@
 		</nav>
 	</header>
 
-	<article id="buy_home">
+	<article id="buy_home" data-title="Comprar">
 		<div>
 			Comprar... proximamente.
 		</div>
@@ -112,6 +105,7 @@
 
 <nav id="side">
 	<a data-article="home_menu"><li class="fa fa-home"></li> Inicio</a>
+	<a data-article="home_menu"><li class="fa fa-trophy"></li> Ranking</a>
 </nav>
 
 <script type="text/javascript" src="phonegap.js"></script>
