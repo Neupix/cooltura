@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.neupix.ruedaverde"
-        version   = "0.0.2">
+        id        = "com.neupix.cooltura"
+        version   = "0.0.1">
 
-    <name>Rueda Verde</name>
+    <name>Cooltura</name>
 
     <description>
-        Eventos y noticias de Rueda Verde.
+        Eventos y noticias de Cooltura.
     </description>
 
     <author href="http://neupix.com" email="info@neupix.com">
