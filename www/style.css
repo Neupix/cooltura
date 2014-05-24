@@ -2,7 +2,7 @@ a{color:#ff0;}
 
 section > header{background:#a00;box-shadow:rgba(0,0,0,.1) 0 1px 0, rgba(0,0,0,.2) 0 1px 5px;}
 
-#home_menu{background:url(img/ui/bg.jpg) no-repeat center;-webkit-background-size: cover;
+article{background:url(img/ui/bg.jpg) no-repeat center;-webkit-background-size: cover;
 background-size: cover;}
 
 #home_acercade{background:url(img/ui/acercadebg.jpg) no-repeat center;-webkit-background-size: cover;
