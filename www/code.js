@@ -10,7 +10,7 @@ $('*[data-progress]').each(function(){
 	$(this).append('<div class="advance" style="width:' + theProgress + '%"></div>');
 
 	if(theProgress < 33) $(this).find('.advance').css('background', '#d00');
-	if(theProgress == 100) $(this).find('.advance').css('background', '#06a');
+	if(theProgress > 60) $(this).find('.advance').css('background', '#06a');
 });
 
 $('*[data-section="evento"]').on('click', function() {
