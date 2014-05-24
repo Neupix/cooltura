@@ -119,3 +119,5 @@ aside.d6 > *{margin:0}
 
 .le{float: left;}
 .ri{float: right;}
+
+.paypal img, .paypal input{width: auto !important;margin: 0 auto}
