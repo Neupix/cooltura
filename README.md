@@ -1,4 +1,2 @@
-ruedaverde
-==========
-
-Eventos y noticias de Rueda Verde.
+# cooltura
+Startup Weekend MEGA
