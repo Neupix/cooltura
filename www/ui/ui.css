@@ -111,5 +111,7 @@ aside.d6 > *{margin:0}
 .button{background: #a00 !important;color:#fff !important;text-align: center;text-shadow: 0 -1px 0 rgba(0,0,0,.2);border-radius:3px;}
 
 .p{padding: 1em}
-.pp{padding: 2em;}
+.pp{padding: 2em}
 .nt{padding-top: 0;padding-bottom: 0;}
+
+.p100{width: 100%;}
