@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cooltura</title>
+
+	<link rel="stylesheet" href="ui/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="ui/ui.css">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/fastclick.js"></script>
+</head>
+<body id="body">
+
+<section id="home">
+	<header>
+		<div class="title">Cooltura</div>
+
+		<nav class="left">
+			<a open-nav><i class="fa fa-bars"></i></a>
+		</nav>
+	</header>
+
+	<article id="home_menu" data-title="Inicio">
+		<aside class="columns">
+			<aside class="d6 p">
+				<img src="img/ui/evento.jpg" alt="" class="sh">
+				<div class="progress" data-progress="50"></div>
+			</aside>
+	
+			<aside class="d6 p">
+				<img src="img/ui/evento.jpg" alt="" class="sh">
+				<div class="progress" data-progress="25"></div>
+			</aside>
+		</aside>
+	</article><!-- home_menu -->
+
+	<article id="home_eventos" data-title="Eventos">
+		<aside>
+			No hay eventos disponibles.
+		</aside>
+	</article><!-- home_eventos -->
+
+	<article id="home_noticias" data-title="Noticias">
+		<aside>
+			No se han podido cargar las noticias.
+		</aside>
+	</article><!-- home_noticias -->
+</section><!-- home -->
+
+<nav id="side">
+	<a data-article="home_menu"><li class="fa fa-home"></li> Inicio</a>
+	<a data-article="home_eventos"><li class="fa fa-calendar"></li> Eventos</a>
+</nav>
+
+<script type="text/javascript" src="phonegap.js"></script>
+<script src="js/app.js"></script>
+<script src="code.js"></script>
+
+</body>
+</html>
