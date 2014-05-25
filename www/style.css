@@ -2,8 +2,7 @@ body{color:#333}
 
 a{color:#ff0;}
 
-section > header{background:#fafafa;box-shadow:inset rgba(255,255,255,.12) 0 1px 0, rgba(0,0,0,.08) 0 1px 0, rgba(0,0,0,.08) 0 1px 5px;text-align: left;color:#444;text-shadow:#fff 0 1px 0;}
-section > header .title{padding-left: 3rem}
+section > header{background:#fafafa;box-shadow:inset rgba(255,255,255,.12) 0 1px 0, rgba(0,0,0,.08) 0 1px 0, rgba(0,0,0,.08) 0 1px 5px;color:#444;text-shadow:#fff 0 1px 0;}
 
 article{background:#fafafa;-webkit-background-size: cover;background-size: cover;margin-bottom: 3rem;}
 
