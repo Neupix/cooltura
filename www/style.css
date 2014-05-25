@@ -6,7 +6,8 @@ section > header{background:#fafafa;box-shadow:inset rgba(255,255,255,.12) 0 1px
 
 article{background:#fafafa;-webkit-background-size: cover;background-size: cover;padding-bottom: 3.5rem;}
 
-.evento{padding: 0 0 161.8%;margin: 0;background-size:cover;background-position:center;}
+.evento{padding: 0 0 161.8%;margin: 0;background-size:cover;background-position:top center;}
+#home_catalogo .evento{padding: 0 0 100%;}
 .evento img{margin-bottom: .5rem;}
 #home_catalogo .category{text-transform: uppercase;font-weight: 600;color:#777;}
 #home_catalogo .info{margin-bottom: 0 !important}
