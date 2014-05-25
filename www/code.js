@@ -13,6 +13,10 @@ $('*[data-progress]').each(function(){
 	if(theProgress > 60) $(this).find('.advance').css('background', '#06a');
 });
 
+$('*[data-bg]').each(function() {
+	$(this).css('background-image', 'url(img/ui/' + $(this).data('bg') + ')');
+});
+
 $('*[data-section="evento"]').on('click', function() {
 	thePrice = $(this).data('precio');
 

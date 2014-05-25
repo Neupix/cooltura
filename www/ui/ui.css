@@ -12,6 +12,7 @@ input[type="range"]{display: block;width: 100%;}
 
 /* common components */
 header{width: 100%;line-height: 3rem;font-size:1.25rem;text-align: center;color:#fff}
+header .fa{line-height: 3.1rem;}
 .logo{padding: 1rem 2rem;margin: 0 auto}
 
 /* section */
@@ -47,6 +48,9 @@ nav#side a{display: block;height: 3rem;line-height: 3rem;color:#ddd;padding: 0 0
 nav#side a:hover{background:#000;color:#fff}
 nav#side header{background:#000}
 nav#side .fa{width:1.5rem}
+
+nav#bottom{height: 3em;width: 100%;position: fixed;bottom: 0;left: 0;background: #000;}
+nav#bottom a{width: 25%;height: 3rem;display: block;float: left;text-align: center;line-height: 3rem;font-size:1.6rem;color:#fff;}
 
 /* positions */
 footer{position: absolute;bottom: 0;padding: 1rem;width: 100%}
