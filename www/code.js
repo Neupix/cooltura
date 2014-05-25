@@ -1,6 +1,6 @@
 var evento = [];
 
-function createEvento(nombre,fecha,hora,precio,cupo,imagen,direccion,organizador, categoria) {
+function createEvento(nombre,fecha,hora,precio,cupo,imagen,direccion,organizador, categoria, sinopsis) {
 	this.nombre = nombre || '';
 	this.fecha = fecha || '';
 	this.hora = hora || '';
@@ -11,18 +11,20 @@ function createEvento(nombre,fecha,hora,precio,cupo,imagen,direccion,organizador
 	this.direccion = direccion || '';
 	this.organizador = organizador || '';
 	this.categoria = categoria || '';
+	this.sinopsis = sinopsis || '';
 };
 
 evento[0] = new createEvento(
 	'Rock It!',
 	'Mayo 30',
 	'8pm',
-	'$20',
+	'20',
 	'50',
 	'rockit',
 	'Av Chapultepec 389',
 	'Organizador',
-	'Música'
+	'Música',
+	'Sinopsis'
 );
 
 var catalogoBuffer = "";
@@ -48,7 +50,15 @@ $('*[data-progress]').each(function(){
 $('*[data-section="evento"]').on('click', function() {
 	id = $(this).data('id');
 
+	$('#evento .title').html( evento[id].nombre);
 	$('#eventoPoster').attr('src', evento[id].imageurl );
 	$('#evento .price').html( '$' + evento[id].precio );
-	$('#evento .title').html( evento[id].nombre);
+
+	$('#evento .fecha').html( evento[id].fecha);
+	$('#evento .hora').html( evento[id].hora);
+	$('#evento .precio').html( evento[id].precio);
+	$('#evento .cupo').html( evento[id].cupo);
+	$('#evento .direccion').html( evento[id].direccion);
+	$('#evento .categoria').html( evento[id].categoria);
+	$('#evento .sinopsis').html( evento[id].sinopsis);
 });
