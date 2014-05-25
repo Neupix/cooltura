@@ -61,27 +61,27 @@ function exit() {
 }
 
 /* ui functions */
-$('*[open-nav]').on('click', function() {
-	event.preventDefault();
-	$body.addClass('showSide');
-});
-
-$('*[data-section]').on('click', function() {
-	event.preventDefault();
-	load($(this).attr('data-section'),0);
-	closeSide();
-})
-
-$('*[data-article]').on('click', function() {
-	event.preventDefault();
-	load(0,$(this).attr('data-article'));
-	closeSide();
-})
-
-$('*[back]').on('click', function() {
-	event.preventDefault();
-	back();
-});
+function ui() {
+	$('*[open-nav]').on('click', function() {
+		event.preventDefault();
+		$body.addClass('showSide');
+	});
+	$('*[data-section]').on('click', function() {
+		event.preventDefault();
+		load($(this).attr('data-section'),0);
+		closeSide();
+	})
+	$('*[data-article]').on('click', function() {
+		event.preventDefault();
+		load(0,$(this).attr('data-article'));
+		closeSide();
+	})
+	$('*[back]').on('click', function() {
+		event.preventDefault();
+		back();
+	});
+}
+ui();
 
 /* starting */
 var currentSection = '#' + $('section').first().attr('id');

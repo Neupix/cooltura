@@ -1,3 +1,37 @@
+var evento = [];
+
+function createEvento(nombre,fecha,hora,precio,cupo,imagen,direccion,organizador, categoria) {
+	this.nombre = nombre || '';
+	this.fecha = fecha || '';
+	this.hora = hora || '';
+	this.precio = precio || '';
+	this.cupo = cupo || '';
+	this.imagen = imagen || ''; 
+	this.imageurl = 'img/evento/' + imagen + '.jpg';
+	this.direccion = direccion || '';
+	this.organizador = organizador || '';
+	this.categoria = categoria || '';
+};
+
+evento[0] = new createEvento(
+	'Rock It!',
+	'Mayo 30',
+	'8pm',
+	'$20',
+	'50',
+	'rockit',
+	'Av Chapultepec 389',
+	'Organizador',
+	'Música'
+);
+
+var catalogoBuffer = "";
+for(var x=0;x<evento.length;x++) {
+	catalogoBuffer += '<aside class="sh"><aside style="background-image:url(' + evento[x].imageurl + ')" data-section="evento" data-id="' + x + '" class="evento" data-title="' + evento[x].nombre + '" data-precio="' + evento[x].precio + '"><aside class="float"><b class="le">FUNDING</b> <b class="ri">55%</b><br><div class="progress" data-progress="55"></div><span class="le">($1600 / 25,000)</span> <span class="ri">3 days left</span></aside></aside><aside class="info"><h1>Ejemplo</h1><span class="category">' + evento[x].categoria + '</span></aside></aside></article>';
+}
+document.getElementById('home_catalogo').innerHTML = catalogoBuffer;
+ui();
+
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
@@ -6,22 +40,15 @@ function onDeviceReady() {
 
 $('*[data-progress]').each(function(){
 	theProgress = $(this).data('progress');
-
 	$(this).append('<div class="advance" style="width:' + theProgress + '%"></div>');
-
 	if(theProgress < 33) $(this).find('.advance').css('background', '#d00');
 	if(theProgress > 60) $(this).find('.advance').css('background', '#06a');
 });
 
-$('*[data-bg]').each(function() {
-	$(this).css('background-image', 'url(img/ui/' + $(this).data('bg') + ')');
-});
-
 $('*[data-section="evento"]').on('click', function() {
-	thePrice = $(this).data('precio');
+	id = $(this).data('id');
 
-	$('#eventoPoster').attr('src', $(this).find('img').attr('src') );
-
-	$('#evento .price').html( '$' + thePrice );
-	$('#evento .title').html( $(this).data('title') );
+	$('#eventoPoster').attr('src', evento[id].imageurl );
+	$('#evento .price').html( '$' + evento[id].precio );
+	$('#evento .title').html( evento[id].nombre);
 });
