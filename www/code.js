@@ -28,15 +28,15 @@ evento[0] = new createEvento(
 );
 
 evento[1] = new createEvento(
-	'La verdad sospechosa',
+	'Sarah Chang',
 	'Mayo 30',
 	'8pm',
 	'20',
 	'50',
-	'ev0',
+	'ev2',
 	'Av Chapultepec 389',
 	'Organizador',
-	'Teatro',
+	'Música',
 	'Sinopsis'
 );
 
@@ -66,9 +66,23 @@ evento[3] = new createEvento(
 	'Sinopsis'
 );
 
+evento[4] = new createEvento(
+	'La verdad sospechosa',
+	'Mayo 30',
+	'8pm',
+	'20',
+	'50',
+	'ev0',
+	'Av Chapultepec 389',
+	'Organizador',
+	'Teatro',
+	'Sinopsis'
+);
+
 var catalogoBuffer = "";
 for(var x=0;x<evento.length;x++) {
-	catalogoBuffer += '<aside class="d6"><aside class="sh"><aside style="background-image:url(' + evento[x].imageurl + ')" data-section="evento" data-id="' + x + '" class="evento" data-title="' + evento[x].nombre + '" data-precio="' + evento[x].precio + '"><aside class="float"><b class="le">FUNDING</b> <b class="ri">55%</b><br><div class="progress" data-progress="55"></div><span class="le"></span> <span class="ri"></span></aside></aside><aside class="info"><h1>' + evento[x].nombre + '</h1><span class="category">' + evento[x].categoria + '</span></aside></aside></article></aside>';
+	fund = Math.random() * 100 | 0;
+	catalogoBuffer += '<aside class="d6"><aside class="sh"><aside style="background-image:url(' + evento[x].imageurl + ')" data-section="evento" data-id="' + x + '" class="evento" data-title="' + evento[x].nombre + '" data-precio="' + evento[x].precio + '"><aside class="float"><b class="le">FUNDING</b> <b class="ri">' + fund + '%</b><br><div class="progress" data-progress="' + fund + '"></div><span class="le"></span> <span class="ri"></span></aside></aside><aside class="info"><h1>' + evento[x].nombre + '</h1><span class="category">' + evento[x].categoria + '</span></aside></aside></article></aside>';
 }
 document.getElementById('home_catalogo').innerHTML = catalogoBuffer;
 ui();
