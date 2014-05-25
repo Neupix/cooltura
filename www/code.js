@@ -62,3 +62,7 @@ $('*[data-section="evento"]').on('click', function() {
 	$('#evento .categoria').html( evento[id].categoria);
 	$('#evento .sinopsis').html( evento[id].sinopsis);
 });
+
+	function share(url) {
+		window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null, url, console.log('share ok'), function(errormsg){alert(errormsg)})
+	}
