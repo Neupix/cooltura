@@ -46,6 +46,7 @@
     <gap:plugin name="nl.x-services.plugins.socialsharing"/>
     <gap:plugin name="nl.x-services.plugins.calendar" />
     <gap:plugin name="org.li8.inappbrowser" version="0.1" />
+    <access origin="*" browserOnly="true" />
     
 
     <!-- Define app icon for each platform. -->

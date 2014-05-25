@@ -64,5 +64,6 @@ $('*[data-section="evento"]').on('click', function() {
 });
 
 	function share(url) {
-		window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null, url, console.log('share ok'), function(errormsg){alert(errormsg)})
+		window.open(url, '_system');
+		return false;
 	}
